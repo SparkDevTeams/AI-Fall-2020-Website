@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><title>AI Sentiment Analysis</title>
+    <link rel="icon" type="image/png" href="{{url_for('static',filename='images/favicon1.png') }}">
+    <link rel="stylesheet" href = "static\css\base.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+</head>
+    <body>
+        <h1>AI Sentiment Analysis</h1>
+        <div class="container">
+            <img src="{{url_for('static',filename='images/coolbackground.png') }}" alt="colorful background" style="width:100%;">
+            <div class="centered"> 
+                <div class="transbox">
+                    <form method = "post">
+                        <div class="container">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="six columns">
+                                        <h1>Review #{{text}}:</h1>
+                                        <hr style = "width: 75%; border-color:white;">
+                                        <h2 style = "color:orange;">Review Before Pre-processing:</h2>
+                                        <!---<hr style = "width: 50%; border-color:orange;">--->
+                                        <p><large>{{text2}}</large></p>
+                                        <hr style = "width: 75%; border-color:white;">
+                                        <h2 style = "color: orange;">Review After Pre-processing:</h2>
+                                        <!---<hr style = "width: 50%; border-color:orange;">--->
+                                        <p><large>{{text3}}</large></p>
+                                        <hr style = "width: 75%; border-color:white;">
+                                        <h2 style = "color: orange;">Sentiment Value: {{text4}}</h2>
+                                        <p><large></large></p>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                    </form>
+                </div>
+            </div>
+        </div>
+     <footer class="Footer">
+         <section class="Footer_content">
+             <p class="Footer_copyright">&copy; 2020 Developed by SparkDev AI Team</p>
+         </section>
+     </footer>
+
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Sentiment Analysis</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{url_for('static',filename='images/favicon1.png') }}"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="static\css\base.css" />
+  </head>
+  <body>
+    <h1>AI Sentiment Analysis</h1>
+    <div class="container">
+      <img
+        src="{{url_for('static',filename='images/coolbackground.png') }}"
+        alt="colorful background"
+        style="width: 100%"
+      />
+      <div class="centered transbox row six columns">
+        <h1>Which review would you like to see? Please input a number:</h1>
+        <form action="{{ url_for('input') }}" method="POST">
+          <input
+            class="u-full-width"
+            type="text"
+            name="x"
+            placeholder="Type Here"
+            id="x"
+          />
+          <br>
+          <br>
+          <br>
+          <button type="Submit" class="button">Submit</button>
+        </form>
+
+        {% with messages = get_flashed_messages() %} {% if messages %} {% for
+        message in messages%}
+        <div class="alert alert-success alert-dismissable" role="alert">
+          {{message}}
+        {% endfor %} {% endif %} {% endwith %}
+
+      </div>
+    </div>
+    <footer class="Footer">
+      <section class="Footer_content">
+        <p class="Footer_copyright">
+          &copy; 2020 Developed by SparkDev AI Team
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>

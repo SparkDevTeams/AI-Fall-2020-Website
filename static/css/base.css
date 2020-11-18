@@ -1,0 +1,110 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+body,
+head {
+  background-color:black;
+}
+
+.bg {
+  background-image: url("images/coolbackground.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.transbox {
+  margin: 30px;
+  background: black;
+  opacity: 0.6;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+div.transbox p {
+  font-weight: bold;
+  color: white;
+  font-size: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+input[type="text"] {
+  color: white;
+  width: 100%;
+  font-size: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-color: orange;
+  border-radius: 4px;
+  background-color: black;
+}
+
+.button {
+  border-color: orange;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: black;
+}
+
+.button:hover {
+  background-color: #fe27ab;
+}
+
+footer {
+  color: white;
+  padding: 2px 0;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+p {
+  font-size: 16px;
+}
